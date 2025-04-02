@@ -1,0 +1,164 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Layout using Flexbox */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+}
+
+/* About Me Section */
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.intro-text h1 {
+    font-size: 2rem;
+}
+
+/* Goals Section */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item h3 {
+    font-size: 1.2rem;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+}
+
+.skill-level {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Hobbies Section */
+.hobbies-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+}
+
+.hobby-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        align-items: center;
+    }
+
+    .hobbies-container {
+        flex-direction: column;
+    }
+}
+
